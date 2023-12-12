@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+div.container{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 0, 14);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+div.circle-cont{
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.center-circle{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(0, 0, 14);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+span.value{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+div.input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin: 1rem;
+    width: 12rem;
+}
+input{
+    width: 100%;
+    height: 28px;
+    padding-left: 4px;
+    border-radius: 3px;
+    border: 1px solid #6b9dff;
+
+}
+input:hover{
+    border: 1px solid #4d5bf9;
+    border-radius: 3px;
+    transition: .2s ease;
+}
+button{
+    height: 25px;
+    background-color: #4883f8;
+    color: #cadcff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+button:hover{
+    font-weight: bold;
+    background-color: #4d5bf9;
+}
+p{
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 490px){
+    body{
+        flex-direction: column;
+    }
+    div.container{
+        margin top: 1rem;
+        width: 230px;
+        height: 230px;
+    }
+    div.input,
+    input{
+        width: 230px;
+
+    }
+}
+@media (max-width: 250px){
+    div.container{
+        width: 100%;
+        height: 170px;
+        margin-top: 8px;
+    }
+    .progress-bar{
+        margin-top: 2rem;
+    }
+    div.input,
+    input,
+    button{
+        width: 100%;
+        margin: 0px 5px;
+    }
+    p{
+        padding: 0px 5px;
+        text-align: center;
+        font-size: 12px !important;
+    }
+}
